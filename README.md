@@ -17,7 +17,7 @@ This project is all about getting in contact with, participating in and understa
 ## Here is what we used
 Apart from basic packages like python's numpy and pandas package for data wrangling, we used plotnine's `ggplot`, as well as `matplotlib` to construct the plots that you can check out in the file **DataSummary.ipynb**. If you are already familiar with the data science programming language ***R***, getting along with the code might be child's play for you! Bar plots, violin plots or jittering data points can all be very easy with ggplot, since it does a lot of things implicitly, which means you do not have to state how the program shall proceed. Forthermore, matplotlib was used for one specific stacked bar plot that we were reluctant to leave out, which is why matplotlib is included here as well.
 
-Conducting the Flanker Task experiment is done with help of the package `expyriment` in the file **FlankerExperiment.py**. It comes in handy when including stimuli that are presented on screen and enables to obtain extremely precise reaction times with a fault range of roughly 20ms. For a nice user interface, we then used the package `psychopy` in Coder-Mode in order to make everything more accessible.
+Conducting the Flanker Task experiment is done with help of the package `expyriment` in the file **FlankerExperiment.py**. It comes in handy when including stimuli that are presented on screen and enables to obtain extremely precise reaction times with a fault range of roughly 20ms.
 
 ## Here is what you need
 ### In order to make use of this code, you need to have git installed. 
@@ -55,10 +55,19 @@ This repo gives you access to many different files, be they basic python scripts
 In order to run any python script in this repo, go to the directory in which the experiment script is saved and use the basic command `python SCRIPTNAME.py`. In order to use the interface we constructed and browse more easily, execute the menu.py file as described above.
 
 ## Here is what you can do
-This respository, as already mentioned multiple times, gives you the chance to participate in theexperiment and contribute data to out project. What you might ask yourself now are questions like: `what is the slow event-related Flanker Task?` and `what knowledge gain does this experiment bring?`. The Flanker Task is a reaction task in which it is neccessary to press a button depending on the stimulus that is presented on the screen. These stimuli consist of arrays of "arrows" pointing to either the right or the left and can look like "<<<<<" (for which you would have to press the left-arrow key) or "<<><<" (for which you would have to press the right-arrow key). These stimuli can be categorized in the categories ***congruent*** and ***incongruent*** and you already combined very well that the key you have to press depends on whether the middle arrow points to the left or right.
+This respository, as already mentioned multiple times, gives you the chance to participate in the experiment and contribute data to out project. What you might ask yourself now are questions like: `what is the slow event-related Flanker Task?` and `what knowledge gain does this experiment bring?`.
+
+The Flanker Task is a reaction task in which it is neccessary to press a button depending on the stimulus that is presented on the screen. These stimuli consist of arrays of "arrows" pointing to either the right or the left and can look like "<<<<<" (for which you would have to press the left-arrow key) or "<<><<" (for which you would have to press the right-arrow key). These stimuli can be categorized in the categories ***congruent*** and ***incongruent*** and you already combined very well that the key you have to press depends on whether the middle arrow points to the left or right.
 
 In order to get a more detailed description of the Flanker Task experiment and see some plots about what results we can obtain, see the file **DataSummary.ipynb**. There, we include information about experiment conduction and present a showcase of data tidying and some basic summary statistics.
-But there is more to discover! Run the experiment on your own or just look at the python script
+But there is more to discover! Run the experiment on your own or just look at the python script.
+
+## Troubleshooting to save you some frustration time
+### Running the experiment
+If, after running the experiment on your local machine, you want to continue browsing around, re-open the ***menu.py***-file in a fresh terminal, since the panels to choose options to not react otherwise.
+
+### Showing results of other experiment runs
+In case you did the eyperiment multiple times on your machine and collected several .xpd-files containing rivh and valuable data that you want to have visualized, change the filename in line xx of the file PersonalSummary.py to the filename you want to have visualized. Per "default", the program only makes use of the first run's data, so if you do not aim to delete every data file you constructed before, save some time and simply change the filename.
 
 ## Data references / Credits
 
@@ -80,4 +89,7 @@ Greetings from our GitHub-profiles
 - [fkirsch](https://github.com/Kirschberg32)
 - [lahellmann](https://github.com/lahellmann)
 - [mejansen](https://github.com/mejansen)
+
+## A note to end with
+When it comes to the data we collected from the official experiment run, we have faith that if you use this repository, you leave all this valuable data untouched!
 
