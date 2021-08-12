@@ -138,7 +138,7 @@ def merge_datasets():
             # append the data from second df:
             data_combined = data_general.append(data_specific)
             data_combined = data_combined.set_index(np.arange(rows_g + rows_s))
-            data_combined.to_csv(path_or_buf = "data/data_2.csv")
+            data_combined.to_csv(path_or_buf = "data/data.csv")
         else:
             print("There must have been a mistake with your experiment data. Try again")   # error message, if there is sth wrong with the participant's file
     else:
