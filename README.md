@@ -67,7 +67,7 @@ But there is more to discover! Run the experiment on your own or just look at th
 If, after running the experiment on your local machine, you want to continue browsing around, re-open the ***menu.py***-file in a fresh terminal, since the panels to choose options to not react otherwise.
 
 ### Showing results of other experiment runs
-In case you did the eyperiment multiple times on your machine and collected several .xpd-files containing rivh and valuable data that you want to have visualized, change the filename in line xx of the file PersonalSummary.py to the filename you want to have visualized. Per "default", the program only makes use of the first run's data, so if you do not aim to delete every data file you constructed before, save some time and simply change the filename.
+In case you did the eyperiment multiple times on your machine and collected several .xpd-files containing rich and valuable data that you want to have visualized, change the filename in line xx of the file PersonalSummary.py to the filename you want to have visualized. Per "default", the program only makes use of the first run's data, so if you do not aim to delete every data file you constructed before, save some time and simply change the filename.
 
 ## Data references / Credits
 
