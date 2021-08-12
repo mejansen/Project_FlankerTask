@@ -90,6 +90,6 @@ Greetings from our GitHub-profiles
 - [lahellmann](https://github.com/lahellmann)
 - [mejansen](https://github.com/mejansen)
 
-## A note to end with
+## A note to end on
 When it comes to the data we collected from the official experiment run, we have faith that if you use this repository, you leave all this valuable data untouched!
 
