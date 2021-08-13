@@ -20,6 +20,7 @@ BAR = "As we can see, most of the reaction times are concentrated on an interval
 VIOLIN_ONE = "Since we have several blocks, there could be an effect of practice."
 VIOLIN_TWO = "The summary statistic (blue point in the middle) is slightly lower for block two which indicates an effect of practice between the two blocks. It is not possible to say though that this may not only be due to growing accustomed to the setting. It is further possible to see that the violin for block one s slightly wider on top, while block two pulls further towards the quicker reaction times on the bottom. Overall, we can definitely see an increase of speed over the course of the two blocks."
 SCATTER_ONE = "Including a wider variety of data into the plots can be helpful to find some value interactions."
+SCATTER_TWO = "As you can see, the data points for the congruent condition as indicated by the legend are mostly distributed in the lower part of the plot, while the incongruent condition produced reaction times in the upper region of the plot. With onset on the x-axis, the regression line also shows that further into the experiment, reaction times slightly get faster (negative slope), which means that people get fasterwith practice. This is what we were also able to see with the previous violin plot."
 STACKED_BAR_ONE = "We want to see the relation between the mean reaction times of the two conditions (congruent and incongruent) distributed over the two practice blocks. In order to construct that, we first have to gain our data though."
 STACKED_BAR_TWO = "We see that between the blocks, the average reaction times in the congruent condition do not differ significantly and so do the mean reaction times in both conditions in the second block. What differs though, are the mean reaction times in the incongruent condition between the two block. The average reaction time differs by nearly 100ms which means a significant increase of reaction speed in the second block that could be due to practice and habituation."
 
@@ -83,7 +84,7 @@ def violin_plot(event):
 def scatter_plot(event):
     """Shows the scatter plot that can also be seen in DataSummary.ipynb"""
     fig = DataWrangling.scatter()
-    mpl_pane = pn.Column(SCATTER_ONE, pn.pane.Matplotlib(fig, dpi = 480, tight = True))
+    mpl_pane = pn.Column(SCATTER_ONE, pn.pane.Matplotlib(fig, dpi = 480, tight = True), SCATTER_TWO)
     pn.serve(mpl_pane)
     
 def stacked_barplot(event):
