@@ -19,7 +19,7 @@ def clean(data):
             value = row[6]
             data.at[index, "z_value"] = abs(value - mean)/ sd
         z_max = data["z_value"].idxmax()
-        if z_max > 3:
+        if data.at[z_max, "z_value"] > 3:
             data = data.drop(z_max)
         else:
             break
