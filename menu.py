@@ -26,6 +26,7 @@ STACKED_BAR_TWO = "We see that between the blocks, the average reaction times in
 # plot texts -> specific data analysis
 BAR_COMPARISON_TEXT = "Comparing reaction times is often quite a useful tool to see, where onself is at, but also to understand the results of a data analysis and see what is the mean / usual reaction time."
 VIOLIN_COMPARISON_TEXT = "Below, you can see the basic violin plot that you can also have a glimpse at in the file DataSummary.ipynb. The red data points that are scattered all over, are from when you yourself ran the experiment on your local machine."
+CONTRIBUTION_TEXT = "Thank you for contributing your data!"
 
 # defaults:
 css = '''
@@ -93,6 +94,8 @@ def stacked_barplot(event):
 def contribute(event):
     """Shows reseults of the linear model as they can also be seen in DataSummary.ipynb"""
     PersonalSummary.merge_datasets()
+    # showing new panel to confirm successful merge
+    pn.serve(contribution_panel)
     
 # secondary panel (for specific data analysis):
 def bar_comparison(event):
@@ -153,5 +156,7 @@ second_panel_specific = pn.Column(pn.Row(button_3a, BAR_PLOT),
                          css_classes = ["panel-widget-box"],
                          background = "#FFF5EE",
                          sizing_mode = "scale_both")
+
+contribution_panel = pn.Row(CONTRIBUTION_TEXT)
 
 pn.serve(menue)
