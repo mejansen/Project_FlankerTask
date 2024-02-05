@@ -5,3 +5,5 @@ expyriment @ git+https://github.com/expyriment/expyriment.git
 plotnine
 scikit-learn
 panel
+jupyter
+arviz
