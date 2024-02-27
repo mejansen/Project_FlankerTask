@@ -1,9 +1,11 @@
 numpy >= 1.19.5
 matplotlib >= 3.3.4
 pandas >= 1.1.5
-expyriment @ git+https://github.com/expyriment/expyriment.git
+expyriment @ git+https://github.com/mhaeming/expyriment.git # Had to use our own fork to get build working correctly
 plotnine
 scikit-learn
 panel
 jupyter
 arviz
+hssm @ git+https://github.com/lnccbrown/HSSM.git
+jax[cpu] < 0.4.16 # Modifiy if you have Cuda support in your environment
