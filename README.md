@@ -86,7 +86,7 @@ Mennes, M., Zuo, X.N., Kelly, C., Di Martino, A., Zang, Y.F., Biswal, B., Castel
 We are a group of three Cognintive Science students at the university of Osnabrueck and what you can discover in this repository is, in fact, the final project we did for the course `Scientific Programming in Python`. There might be a lot of things to be improved, but we would like to ask you to be not too hard on us, though we would love to get honest advice on how to improve our coding and documentation skills, of course! Thanks for sticking with us to the end of this README-file and we hope you can have an interesting time browsing around! :)
 
 Greetings from our GitHub-profiles
-- [fkirsch](https://github.com/Kirschberg32)
+- [hkirsch](https://github.com/hkirsch94)
 - [lahellmann](https://github.com/lahellmann)
 - [mejansen](https://github.com/mejansen)
 
